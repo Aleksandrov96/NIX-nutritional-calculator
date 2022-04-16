@@ -1,0 +1,60 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json_server": "json-server --watch db.json",
+    "start": "concurrently \"npm run json_server \" \"webpack serve --open\" ",
+    "build": "webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add",
+      "eslint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "husky": "^7.0.4",
+    "json-server": "^0.17.0",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.20"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.nixdev.co:aleksandrov.p/nix-intern.git"
+  }
+}

@@ -1,0 +1,420 @@
+// @font-face {
+//     font-family: 'MyFont';
+//     src: url('./my-font.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+:root {
+    --color-primary: #41424A;
+    --color-secondary: #a1a1a1;
+    --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@mixin select {
+    width: 100%;
+    height: 5rem;
+    outline: none;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    margin-top: .25rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-weight: bold;
+
+    &:focus {
+        border: 2px solid var(--color-primary);
+    }
+}
+
+.wrapper {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        width: 100%;
+        height: 24rem;
+        margin-top: 4rem;
+        text-align: center;
+        position: relative;
+        background-color: var(--color-primary);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: '';
+            width: 100%;
+            border-bottom: solid 1px #fff;
+            position: absolute;
+            left: 0;
+            top: 22%;
+            z-index: 1;
+        }
+
+        h1 {
+            background-color: var(--color-primary);
+            width: auto;
+            display: inline-block;
+            z-index: 3;
+            padding: 0 20px 0 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            align-items: center;
+            justify-content: space-between;
+
+            &_dish {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                opacity: .5;
+
+                &--active {
+                    opacity: 1;
+
+                    p {
+                        border-bottom: 1px solid white;
+                    }
+                }
+
+                &-item {
+                    width: 9rem;
+                    height: 9rem;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                    overflow: hidden;
+
+                    &--img {
+                        width: 9rem;
+                        height: 9rem;
+                    }
+                }
+
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+
+        section {
+            height: auto;
+            width: 30%;
+            margin: 1rem;
+            
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+            }
+        }
+
+        .dish {
+            display: flex;
+            flex-direction: column;
+
+            select {
+                @include select();
+            }
+
+            &_preview {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-image {
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    width: 35rem;
+                    height: 30rem;
+                    box-shadow: var(--box-shadow);
+                }
+            }
+
+            &_btns {
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                text-align: center;
+                justify-content: center;
+
+                button {
+                    background-color: white;
+                    border: 1px solid var(--color-primary);
+                    color: var(--color-primary);
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    
+                    &:hover {
+                        background-color: var(--color-primary);
+                        color: white;
+                    }
+
+                    &:first-child {
+                        border-right: none;
+                    }
+                }
+            }
+
+            &_addons {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center; 
+
+                &-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items:center;
+
+                    &--item {
+                        width: 10rem;
+                        height: 10rem;
+                        margin: 1rem;
+                        position: relative;
+
+                        &__img {
+                            width: 10rem;
+                            height: 10rem;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            box-shadow: var(--box-shadow);
+                        }
+
+                        &__close {
+                            position: relative;
+                            float: right;
+                            top: 2rem;
+                            right: .5rem;
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            transition: .2s all;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.2);
+                                color: red;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin-top: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .addonsContainer {
+            display: flex;
+            flex-direction: column;
+            max-height: 76vh;
+            border: .5px solid var(--color-primary);
+
+            ul {
+                list-style-type: none;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                }
+                
+                &::-webkit-scrollbar-thumb {
+                background: #888;
+                }
+                
+                &::-webkit-scrollbar-thumb:hover {
+                background: var(--color-primary);
+                }
+            }
+
+            li {
+                font-size: 2rem;
+                border-bottom: 1px solid var(--color-primary);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                .addons_item {
+                    height: 10rem;
+                    margin: 1rem;
+                    margin-left: 2rem;
+                    
+                    &-img {
+                        width: 10rem;
+                        height: 10rem;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        box-shadow: var(--box-shadow);
+                    }
+
+                    &-add {
+                        position: relative;
+                        float: right;
+                        right: 1.4rem;
+                        font-size: 3rem;
+                        border-radius: 50%;
+                        transition: .2s all;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border: none;
+                        background-color: transparent;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            color: green;
+                        }
+                    }     
+                    
+                }
+                p {
+                    margin-right: 2rem;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .nutricion_facts {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 65vh;
+        }
+
+        #serving {
+            background-color: var(--color-primary);
+            color: white;
+            font-size: 1.5rem;
+            width: 100%;
+            height: 10rem;
+            padding: 1rem;
+        }
+
+        h2 {
+            position: relative;
+            float: right;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #total {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 1.5rem;
+
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            tr {
+                &:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-image: url('./images/Wallpaper strawberry, raspberries, blueberries, cherries, berries, 5k, Food 514318016.jpg');
+        background-attachment:fixed;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        h1 {
+            color: white;
+            font-size: 5rem;
+        }
+
+        p {
+            margin: 1rem;
+            color: whitesmoke;
+            font-size: 1.5rem;
+        }
+
+        button {
+            background-color: transparent;
+            border: 3px solid white;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+
+            &:hover {
+                background-color: var(--color-primary);
+                color: white;
+                border: 3px solid var(--color-primary)
+            }
+        }
+    }
+}

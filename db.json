@@ -1,0 +1,282 @@
+{
+  "categories": [{
+      "id": 1,
+      "name": "FRESH DRINK",
+      "pic": "https://www.kindpng.com/picc/m/466-4665876_juice-clipart-jus-d-orange-full-glass-of.png",
+      "dishes": [
+        { 
+          "id": 5,
+          "name": "Orange juice",
+          "pic": "https://www.kindpng.com/picc/m/466-4665876_juice-clipart-jus-d-orange-full-glass-of.png",
+          "calories": 124
+        },
+        {
+          "id": 6,
+          "name": "Banana and blueberry smoothie",
+          "pic": "https://cutewallpaper.org/24/smoothie-png/smoothie-drink-healthy-free-photo-on-pixabay.png",
+          "calories": 173
+        }
+      ],
+      "addons": [
+        {
+          "id": 13,
+          "name": "Orange",
+          "pic": "https://cdn.pixabay.com/photo/2016/02/23/17/42/orange-1218158_1280.png",
+          "calories": 62
+        },
+        {
+          "id": 14,
+          "name": "Banana",
+          "pic": "https://clipart-best.com/img/banana/banana-clip-art-18.png",
+          "calories": 89
+        },
+        {
+          "id": 15,
+          "name": "Blueberry",
+          "pic": "https://www.pngplay.com/wp-content/uploads/6/Blueberry-Transparent-File.png",
+          "calories": 84
+        },
+        {
+          "id": 16,
+          "name": "Coconut milk",
+          "pic": "https://www.cuppers.ca/wp-content/uploads/2020/03/Pacific-Barista-Coconut-Milk.png",
+          "calories": 40
+        },
+        {
+          "id": 17,
+          "name": "Strawberry",
+          "pic": "https://img.cppng.com/download/2020-06/23418-7-strawberry-transparent-background.png",
+          "calories": 49
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SALAD",
+      "pic": "https://thumbs.dreamstime.com/b/italian-caesar-salad-royal-shrimps-fresh-delicious-parmesan-cheese-isolated-white-39297534.jpg",
+      "dishes": [{
+        "id": 7,
+        "name": "Salad with shrimp",
+        "pic": "https://thumbs.dreamstime.com/b/italian-caesar-salad-royal-shrimps-fresh-delicious-parmesan-cheese-isolated-white-39297534.jpg",
+        "calories": 240
+        },
+        {
+        "id": 8,
+        "name": "Greek",
+        "pic": "https://www.nicepng.com/png/detail/592-5927650_greek-salad.png",
+        "calories": 150
+        }
+      ],
+      "addons": [
+        {
+          "id": 18,
+          "name": "Shrimp",
+          "pic": "https://clipart-best.com/img/shrimps/shrimps-clip-art-6.png",
+          "calories": 85
+        },
+        {
+          "id": 19,
+          "name": "Salad mix",
+          "pic": "https://www.pngkey.com/png/full/313-3139617_hydroponic-super-salad-mix.png",
+          "calories": 20
+        },
+        {
+          "id": 20,
+          "name": "Tomato",
+          "pic": "https://www.kindpng.com/picc/m/21-214466_fresh-tomato-png-download-image-cherry-tomatoes-clip.png",
+          "calories": 25
+        },
+        {
+          "id": 21,
+          "name": "Avocado",
+          "pic": "https://www.pngplay.com/wp-content/uploads/2/Avocado-PNG-Images-HD.png",
+          "calories": 110
+        },
+        {
+          "id": 22,
+          "name": "Feta",
+          "pic": "https://www.seekpng.com/png/detail/106-1067936_feta-cheese-png.png",
+          "calories": 85
+        },
+        {
+          "id": 24,
+          "name": "Olive",
+          "pic": "https://www.pngall.com/wp-content/uploads/4/Olive-Transparent.png",
+          "calories": 35
+        },
+        {
+          "id": 25,
+          "name": "Cucumber",
+          "pic": "https://png.pngtree.com/png-clipart/20201215/ourlarge/pngtree-slices-of-fresh-and-healthy-cucumber-png-image_2570673.jpg",
+          "calories": 10
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "MAIN COURSE",
+      "pic": "https://www.pngitem.com/pimgs/m/214-2143295_transparent-steak-and-potatoes-clipart-grilled-meat-in.png",
+      "dishes": [{
+          "id": 9,
+          "name": "Chicken steak with puree",
+          "pic": "https://www.pngitem.com/pimgs/m/214-2147532_mashed-potatoes-chicken-and-broccoli-hd-png-download.png",
+          "calories": 238
+        },
+        {
+          "id": 10,
+          "name": "Ribeye steak with grilled vegetables",
+          "pic": "https://www.pngitem.com/pimgs/m/214-2143295_transparent-steak-and-potatoes-clipart-grilled-meat-in.png",
+          "calories": 332
+        }
+      ],
+      "addons": [
+        {
+          "id": 26,
+          "name": "Beef steak",
+          "pic": "https://www.pikpng.com/pngl/b/99-997490_rib-eye-steak-raw-clipart.png",
+          "calories": 179
+        },
+        {
+          "id": 27,
+          "name": "Potato",
+          "pic": "https://www.freepngdesign.com/content/uploads/images/potato-6581.png",
+          "calories": 220
+        },
+        {
+          "id": 28,
+          "name": "Champignon",
+          "pic": "https://pngimg.com/uploads/mushroom/mushroom_PNG3212.png",
+          "calories": 30
+        },
+        {
+          "id": 29,
+          "name": "Onion",
+          "pic": "https://www.pngall.com/wp-content/uploads/2016/03/Onion-Free-Download-PNG.png",
+          "calories": 44
+        },
+        {
+          "id": 30,
+          "name": "Carrot",
+          "pic": "https://www.pngkey.com/png/full/517-5171624_340-g-baby-carrot.png",
+          "calories": 25
+        },
+        {
+          "id": 31,
+          "name": "Chicken fillet",
+          "pic": "https://www.pngkey.com/png/full/120-1207993_chicken-breast-fillets-chicken-breast-cuts.png",
+          "calories": 120
+        },
+        {
+          "id": 32,
+          "name": "Broccoli",
+          "pic": "https://www.pngall.com/wp-content/uploads/2016/05/Broccoli-Free-Download-PNG.png",
+          "calories": 31
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "FIRST COURSE",
+      "pic": "https://express-pizza.vn.ua/upload/resize_cache/iblock/507/400_400_2/507edb0eb8b73a687b4e18c52c533b61.png?1608645671161341",
+      "dishes": [{
+          "id": 11,
+          "name": "Ukrainian borsch",
+          "pic": "https://express-pizza.vn.ua/upload/resize_cache/iblock/507/400_400_2/507edb0eb8b73a687b4e18c52c533b61.png?1608645671161341",
+          "calories": 96
+        },
+        {
+          "id": 12,
+          "name": "Pho-Bo",
+          "pic": "https://www.pngkey.com/png/detail/238-2388225_bowl-of-pho-png-pho-bowl-png-transparent.png",
+          "calories": 85
+        }
+      ],
+      "addons": [
+        {
+          "id": 33,
+          "name": "Beef",
+          "pic": "https://pngimg.com/uploads/beef/beef_PNG33.png",
+          "calories": 80
+        },
+        {
+          "id": 34,
+          "name": "Potato",
+          "pic": "https://www.freepngdesign.com/content/uploads/images/potato-6581.png",
+          "calories": 120
+        },
+        {
+          "id": 35,
+          "name": "Garlic",
+          "pic": "https://freepikpsd.com/file/2019/11/Garlic_PNG_28178-Transparent-Png-Images.png",
+          "calories": 1.5
+        },
+        {
+          "id": 36,
+          "name": "Beet",
+          "pic": "https://www.picng.com/upload/beet/png_beet_17434.png",
+          "calories": 10
+        },
+        {
+          "id": 37,
+          "name": "Cabbage",
+          "pic": "https://pngimg.com/uploads/cabbage/cabbage_PNG99106.png",
+          "calories": 22
+        },
+        {
+          "id": 38,
+          "name": "Onion",
+          "pic": "https://www.pngall.com/wp-content/uploads/2016/03/Onion-Free-Download-PNG.png",
+          "calories": 44
+        },
+        {
+          "id": 39,
+          "name": "Carrot",
+          "pic": "https://www.pngkey.com/png/full/517-5171624_340-g-baby-carrot.png",
+          "calories": 25
+        },
+        {
+          "id": 40,
+          "name": "Pork steak",
+          "pic": "https://pngimg.com/uploads/pork/pork_PNG30.png",
+          "calories": 80
+        },
+        {
+          "id": 41,
+          "name": "Beef bones",
+          "pic": "https://cdn.shopify.com/s/files/1/0020/9331/8217/products/Frozen_Beef_Bones_4_inch-Two_count_530x@2x.png?v=1539526467",
+          "calories": 50
+        },
+        {
+          "id": 42,
+          "name": "Rice noodles",
+          "pic": "https://www.seekpng.com/png/full/184-1849847_rice-noodles-png-graphic-library-library-rice-noodle.png",
+          "calories": 150
+        },
+        {
+          "id": 43,
+          "name": "Soy egg",
+          "pic": "https://cdn.shopify.com/s/files/1/0287/1987/4100/products/extra-ajitama-egg-455630.png?v=1647980692",
+          "calories": 78
+        },
+        {
+          "id": 44,
+          "name": "Onion",
+          "pic": "https://www.pngall.com/wp-content/uploads/2016/03/Onion-Free-Download-PNG.png",
+          "calories": 44
+        },
+        {
+          "id": 45,
+          "name": "Chili",
+          "pic": "https://www.pngplay.com/wp-content/uploads/10/Hot-Chilli-Transparent-File.png",
+          "calories": 5
+        },
+        {
+          "id": 46,
+          "name": "Fresh greenery",
+          "pic": "https://papik.pro/uploads/posts/2021-12/thumbs/1639287146_54-papik-pro-p-petrushka-klipart-57.png",
+          "calories": 5
+        }
+      ]
+    }
+  ]
+}
